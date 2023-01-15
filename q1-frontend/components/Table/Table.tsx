@@ -67,7 +67,12 @@ export default function Table() {
               {content.status}
             </div>
             <div className={styles.item}>
-              {/* TODO: add updates */}
+            {content.updates.map((update, idx) => (
+                <div key={`update_${idx}`} className={styles.update}>
+                  <p>{update.update}</p >
+                  <p className={styles.date}>{update.date}</p >
+                </div>
+              ))}
             </div>
           </div>
         ))}

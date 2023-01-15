@@ -18,3 +18,18 @@
     flex: 1 1 0px;
     flex-direction: column;
 }
+
+.update {
+    display: flex;
+    justify-content: space-between;
+}
+
+.update p {
+    margin: 0;
+}
+
+.date {
+    color: #6462FB;
+    font-size: 12px;
+    padding-top: 8px;
+}
